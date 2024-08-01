@@ -1,0 +1,63 @@
+{
+  "rows": 3,
+  "columns": 3,
+  "probabilities": {
+    "standard_symbols": {
+      "A": 0.4,
+      "B": 0.4,
+      "C": 0.1
+    },
+    "bonus_symbols": {
+      "+1000": 0.1
+    }
+  },
+  "symbols": {
+    "A": {
+      "type": "standard",
+      "multiplier": 100
+    },
+    "B": {
+      "type": "standard",
+      "multiplier": 200
+    },
+    "C": {
+      "type": "standard",
+      "multiplier": 300
+    },
+    "+1000": {
+      "type": "bonus",
+      "extra": 1000
+    }
+  },
+  "win_combinations": [
+    {
+      "name": "same_symbol_5_times",
+      "count": 5,
+      "covered_areas": [
+        [0, 0],
+        [0, 1],
+        [1, 0],
+        [2, 0],
+        [2, 1]
+      ]
+    },
+    {
+      "name": "same_symbols_vertically",
+      "count": 3,
+      "covered_areas": [
+        [0, 2],
+        [1, 2],
+        [2, 2]
+      ]
+    },
+    {
+      "name": "same_symbol_3_times",
+      "count": 3,
+      "covered_areas": [
+        [0, 2],
+        [1, 2],
+        [2, 2]
+      ]
+    }
+  ]
+}
